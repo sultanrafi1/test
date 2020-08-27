@@ -1,0 +1,488 @@
+/* navbar */
+.navbar{
+    background: #f04d24 !important;
+    position: relative;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Red Rose', cursive;
+    font-weight: 400;
+    color: #000;
+}
+
+/* jumbotron */
+.jumbotron{
+    background-image: url(/images/jumbotron.png);
+    background-size: cover;
+    height: 500px;
+}
+
+.jumbotron .display-4{
+    color: #0692cd;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.jumbotron .lead{
+    margin-bottom: 50px;
+    color: #0692cd;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    margin-bottom: -1px;
+}
+
+.video-box .play-btn{
+    background: #f04d24;
+    color: #fff;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 180px;
+    bottom: 0px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.video-box .play-btn i{line-height: 100px; margin-left: 10px;}
+.video-box .play-btn::before, .video-box .play-btn::after{
+    content: '';
+    position: absolute;
+    border: 2px solid #f04d24;
+    border-radius: 50%;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    animation: animate 2s linear infinite;
+    opacity: 0;
+}
+
+.video-box .play-btn::after{animation-delay: 2s;}
+
+@keyframes animate{
+    0%
+    {transform:scale(.5);
+    }
+    50%
+    {opacity:1;
+    }
+    100%
+    {transform:scale(1.5);
+    }
+}
+
+.modal{
+    background: none !important;
+}
+
+.modal-content{
+    background: transparent !important;
+    border: none;
+    width: 100%;
+    opacity: 1;
+}
+
+/* why us */
+.why-us{
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-top: -80px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.why-us h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.why-us img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    
+}
+
+.why-us h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+.why-us p{
+    text-align: justify;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+/* product */
+.product-header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Open Sans', serif;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.kartu {
+    text-align: center;
+    background: #fff;
+    }
+
+.produk{
+    display: inline-block;
+    width: calc(100% / 2);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+}
+
+.produk:hover{
+    background: #f04d24;
+}
+
+.produk:hover a,
+.produk:hover h3,
+.produk:hover p {
+    color: #fff;
+    }
+
+.produk a{
+    color: #555;
+    font-size: 100px;
+    margin-bottom: 30px;
+    }
+
+.produk h3{
+    font-family: 'Open Sans', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+
+.produk p{
+    color: gray;
+    font-family: 'Open Sans', serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    }
+
+.teks p{
+    text-align: center;
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    
+}
+
+/* Fitur*/
+.featurette-divider {
+    margin: 2rem 0;
+    }
+
+.featurette-heading {
+    font-size: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 80;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+    }
+
+.featurette p {
+    font-size: 16px;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin-top: 5px;
+    text-align: justify;
+    }
+
+.featurette img {
+    width: 300px;
+    height: 200px;
+    }
+
+/* service */
+.service-header{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Open Sans', serif;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.kartu-servis{
+    text-align: center;
+    background: #fff;
+}
+
+.kartu-servis h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.servis li{
+    text-align: left;
+}
+
+.servis{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+}
+
+.servis:hover{
+    background: #f04d24;
+}
+
+.servis:hover a,
+.servis:hover h3,
+.servis:hover p {
+    color: #fff;
+    }
+
+.servis-divider{
+    margin: 1rem 0;
+}
+
+#service{
+    margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+    background: #f04d24;
+    padding-top: 2rem;
+    color: #fff;
+    margin-top: -20px;
+}
+
+footer h5 {
+    font-family:'Open Sans', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+footer h6 {
+    font-family:'Open Sans', serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+footer .overview{
+    font-family:'Open Sans', serif;
+    text-align: justify;
+    font-size: 15px;
+}
+
+footer p {
+    font-family:'Open Sans', serif;
+    text-align: justify;
+    font-size: 12px;
+}
+
+footer a {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* konfig */
+.navbar .tombol{
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    width: 130px;
+    height: 40px;
+    background: #523293;
+    font-weight: 500;
+}
+
+.jumbotron .tombol{
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    width: 130px;
+    height: 40px;
+    background: #523293;
+    font-weight: 500;
+}
+
+.servis .tombol{
+    text-transform: uppercase;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    width: 130px;
+    height: 40px;
+    background: #523293;
+    font-weight: 500;
+}
+
+.navbar .tombol:hover,
+.jumbotron .tombol:hover,
+.servis .tombol:hover{
+    color:#000;
+    background: #fccf04;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    /* navbar */
+    .navbar{
+        background: #f04d24;
+    }
+
+    .navbar-brand .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+        color:#000 !important;
+    }
+
+    .nav-link{
+        font-weight: 500;
+    }
+
+    .nav-link:hover{
+        color: #fff !important;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #fff;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-top: -20px;
+    }
+
+    /* jumbotron */
+    .jumbotron{
+        height: 640px;
+    }
+
+    .jumbotron .display-4{
+        font-weight: 500;
+        font-size: 50px;
+        margin-top: 120px;
+    }
+
+    .jumbotron .display-4, .jumbotron .lead{
+        text-align: left;
+    }
+
+    .jumbotron .tombol{
+        margin-top: 20px;
+    }
+
+    .video-box .play-btn{
+        top: 25px;
+        left: 480px;
+    }
+
+    /* product */
+    .product-header{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .produk{
+        margin: 10px;
+        width: 40%;
+    }
+
+    .product-header:hover::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid #f04d24;
+        width: 10%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-top: -28px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: -0.05rem;
+        margin-top: 60px;
+    }
+
+    .featurette p {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    .featurette img {
+        height: 300px;
+        width: 450px;
+    }
+
+    /* service */
+    .service-header{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .service-header:hover::after{
+        content: "";
+        display: block;
+        border-bottom: 3px solid #f04d24;
+        width: 10%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-top: -28px;
+    }
+
+    .servis{
+        width: 40%;
+    }
+}
